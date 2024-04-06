@@ -1,0 +1,151 @@
+.buttonContainer {
+  text-align: end;
+  margin: 60px;
+}
+
+.buttonContainer button {
+  padding: 15px 20px;
+  background-color: var(--color-primary);
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.buttonContainer button:hover {
+  opacity: 0.6;
+}
+
+.table {
+  width: 95%;
+  margin: 40px auto;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.table thead {
+  background-color: green;
+}
+
+.table thead,
+.table tbody {
+  text-align: center;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.table tbody p {
+  word-wrap: break-word;
+}
+
+.table thead tr th {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px;
+}
+
+.table tbody tr td {
+  padding: 8px 0;
+}
+
+.table tbody td .categoryName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.table tbody td .categoryName p {
+  color: #666;
+}
+
+.table tbody td .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.table tbody td .actions button {
+  padding: 8px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table tbody td .actions button.edit {
+  background-color: #0c2d57;
+  color: #fff;
+}
+
+.table tbody td .actions button.delete {
+  background-color: brown;
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-bottom: 20px;
+}
+
+.icon_Close {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.form .form_group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.form .form_group label {
+  width: 25%;
+  color: #555;
+}
+
+.form .form_group input {
+  width: calc(100% - 25%);
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form .form_group input:focus::placeholder {
+  opacity: 0;
+}
+
+.form .form_button {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.form .form_button .button_submit {
+  background-color: var(--color-primary);
+  padding: 13px 50px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+
+.form .form_button .button_submit:hover {
+  opacity: 0.6;
+}

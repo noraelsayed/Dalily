@@ -1,0 +1,52 @@
+.slide {
+  height: 100%;
+  padding: 10px;
+}
+
+.slide h3 {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.slide ul {
+  list-style: none;
+  margin: 50px 0;
+  margin-top: 100px;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .slide ul {
+    display: none;
+  }
+}
+
+.slide a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.slide ul a li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.slide ul a li:hover {
+  background-color: #eeeeeeee;
+}
+
+.slide ul a li .icons {
+  font-weight: bold;
+  font-size: 20px;
+  color: #777;
+}
+
+.isActive {
+  background-color: #eeeeee;
+}

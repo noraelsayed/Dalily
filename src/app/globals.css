@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #ffefd4;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.row1 {
+  flex: 1;
+  height: 100vh;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.row2 {
+  flex: 6;
+  height: 100vh;
+  overflow: auto;
+}
+
+@media (max-width: 991px) {
+  .row1 {
+    display: none;
+  }
+
+  .row2 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .row2 {
+    flex: 4;
+  }
+}
+
+header {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+main {
+  width: 100%;
+  overflow: auto;
+}
